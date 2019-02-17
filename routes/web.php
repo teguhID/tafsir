@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
 });
+Route::resource('ibnuKatsir', 'IbnuKatsirController');
+Route::resource('ayat', 'AyatController');

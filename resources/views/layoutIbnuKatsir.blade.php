@@ -10,6 +10,6 @@
     <a href="{{ url('/') }}">Main Page</a>
     <a href="{{ url('ibnuKatsir/create') }}">Input Data</a>
     <a href="{{ url('ibnuKatsir') }}">Dashboard</a></br></br>
-    @yield('content')
+    @yield('content') 
 </body>
 </html>

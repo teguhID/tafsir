@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 Route::resource('ibnuKatsir', 'IbnuKatsirController');
 Route::resource('ayat', 'AyatController');
+Route::get('api', array('middleware' => 'cors', 'uses' => 'ApiController@index'));

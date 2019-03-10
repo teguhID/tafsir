@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('dashboard');
 });
-Route::resource('ibnuKatsir', 'IbnuKatsirController');
-Route::resource('ayat', 'AyatController');
-Route::get('api', array('middleware' => 'cors', 'uses' => 'ApiController@index'));
+Route::resource('dataTafsir', 'DataTafsirController');
+Route::get('Al-Fatihah', array('middleware' => 'cors', 'uses' => 'ApiController@Surah1'));
+Route::get('Al-Baqarah', array('middleware' => 'cors', 'uses' => 'ApiController@Surah2'));
+// Route::get('dataTafsir/{id}', 'DataTafsirController@Tafsir');
